@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bhi08t7hfftnj"]
+
+[ext_resource type="Script" uid="uid://dic3ojvht6ay0" path="res://scripts/GameManager.cs" id="1_rvslj"]
+[ext_resource type="Script" uid="uid://cbdggc1lxfutq" path="res://scripts/LevelManager.cs" id="2_0bbpv"]
+
+[node name="Main" type="Node3D" unique_id=760676780]
+
+[node name="GameManager" type="Node" parent="." unique_id=804722809]
+script = ExtResource("1_rvslj")
+
+[node name="LevelManager" type="Node" parent="." unique_id=1137920263]
+script = ExtResource("2_0bbpv")

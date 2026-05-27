@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://d6kwjijl38eh"]
+
+[ext_resource type="Script" uid="uid://bthp4tmpkxxcn" path="res://scripts/Gameplay.cs" id="1_ibkli"]
+
+[node name="Game" type="Node3D" unique_id=206760660]
+script = ExtResource("1_ibkli")
+
+[node name="Timer" type="Label" parent="." unique_id=123052079]
+offset_right = 40.0
+offset_bottom = 23.0
