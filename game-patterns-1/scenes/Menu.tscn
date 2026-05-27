@@ -36,18 +36,25 @@ tooltip_text = "Play
 "
 theme_override_fonts/font = SubResource("SystemFont_xdvgc")
 theme_override_font_sizes/font_size = 24
+text = "Play"
 language = "en"
 
 [node name="OptionsButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1654680051]
 custom_minimum_size = Vector2(200, 50)
 layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Options
+"
 
 [node name="ExitButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=888076441]
 custom_minimum_size = Vector2(200, 50)
 layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Exit"
 
 [node name="HighScoreLabel" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1189813192]
 layout_mode = 2
+text = "Best Time:"
 
 [connection signal="pressed" from="CenterContainer/VBoxContainer/PlayButton" to="." method="OnPlayButtonPressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/OptionsButton" to="." method="OnOptionsButtonPressed"]

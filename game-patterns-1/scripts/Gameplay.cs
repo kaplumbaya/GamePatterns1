@@ -15,7 +15,7 @@ public partial class Gameplay : Node3D
 	
 	public override void _Ready()
 	{
-		timerLabel = GetNode<Label>("TimerLabel");
+		timerLabel = GetNode<Label>("CenterContainer/Timer");
 	}
 
 	public override void _Process(double delta)

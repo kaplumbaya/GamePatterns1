@@ -11,16 +11,29 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_j6yq7")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=142145517]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1976855125]
+custom_minimum_size = Vector2(300, 200)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="ClearButton" type="Button" parent="VBoxContainer" unique_id=422527587]
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=142145517]
 layout_mode = 2
 
-[node name="BackButton" type="Button" parent="VBoxContainer" unique_id=1380443697]
+[node name="ClearButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=422527587]
+custom_minimum_size = Vector2(200, 50)
 layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Clear Score"
 
-[connection signal="pressed" from="VBoxContainer/ClearButton" to="." method="OnClearButtonPressed"]
-[connection signal="pressed" from="VBoxContainer/BackButton" to="." method="OnBackButtonPressed"]
+[node name="BackButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1380443697]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Back"
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/ClearButton" to="." method="OnClearButtonPressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/BackButton" to="." method="OnBackButtonPressed"]

@@ -13,7 +13,7 @@ public partial class Menu : Control
 	public override void _Ready()
 	{
 		highscoreLabel =
-			GetNode<Label>("VboxContainer/HighScoreLabel");
+			GetNode<Label>("CenterContainer/VBoxContainer/HighScoreLabel");
 			
 		highscoreLabel.Text =
 			"Best Time: " +
